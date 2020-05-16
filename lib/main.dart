@@ -12,21 +12,35 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Column(
-            children: <Widget>[
-              CircleAvatar(
-                radius: 50.0,
-                backgroundImage: AssetImage("images/ezazul.jpg"),
-              ),
-              Text(
-                "Ezazul Haq",
-                style: TextStyle(
-                  fontSize: 20.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
+          child: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                CircleAvatar(
+                  radius: 60.0,
+                  backgroundImage: AssetImage("images/ezazul.jpg"),
                 ),
-              )
-            ],
+                Text(
+                  "Ezazul Haq",
+                  style: TextStyle(
+                    fontSize: 50.0,
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontFamily: "Pacifico",
+                  ),
+                ),
+                Text(
+                  "FLUTTER DEVELOPER",
+                  style: TextStyle(
+                    fontSize: 20.0,
+                    color: Colors.teal.shade100,
+                    fontFamily: "Source Sans Pro",
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 2.5,
+                  ),
+                ),
+              ],
+            ),
           ),
         ),
       ),
