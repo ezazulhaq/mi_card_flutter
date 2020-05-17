@@ -39,7 +39,14 @@ class MyApp extends StatelessWidget {
                     letterSpacing: 2.5,
                   ),
                 ),
-                Container(
+                SizedBox(
+                  height: 20.0,
+                  width: 150.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
+                  ),
+                ),
+                /*Container(
                   color: Colors.white,
                   margin:
                       EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
@@ -87,6 +94,44 @@ class MyApp extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                ),*/
+                Card(
+                  //color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "+91 9930800797",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: "Source Sans Pro",
+                        color: Colors.teal,
+                      ),
+                    ),
+                  ),
+                ),
+                Card(
+                  //color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(horizontal: 25.0, vertical: 10.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      "ezazulhaq.it@gmail.com",
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        fontFamily: "Source Sans Pro",
+                        color: Colors.teal,
+                      ),
+                    ),
                   ),
                 ),
               ],
